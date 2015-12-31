@@ -16,11 +16,11 @@ case $1 in
 	# Change shell to zsh
 	TEST_CURRENT_SHELL=$(expr "$SHELL" : '.*/\(.*\)')
 	if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
-	  printf "Changin default shell to zsh\n"
-	  chsh -s $(grep /zsh$ /etc/shells | tail -1)
+		printf "Changing default shell to zsh\n"
+		chsh -s $(grep /zsh$ /etc/shells | tail -1)
 	    
 	else
-	  printf "zsh not installed on this sytem\n"
+		printf "zsh not installed on this sytem\n"
 	fi
 
 	# Link .zshrc
