@@ -1,6 +1,6 @@
 # Shell Superstar
 
-A simple environment setup.
+A simple, non-GUI, environment setup.
 
 >This is a spin of the clever [dotfiles](https://github.com/Grazfather/dotfiles) environment setup created by [Grazfather](https://github.com/Grazfather) with less vim modules and adapted for zsh and screen.
 
