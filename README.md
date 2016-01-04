@@ -14,6 +14,8 @@ A simple, non-GUI, environment setup.
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim.git)
 * [Syntastic](https://github.com/scrooloose/syntastic.git)
 
+![shellsuperstar](https://cloud.githubusercontent.com/assets/1853433/12089550/4c4031c6-b2e6-11e5-9dad-8986a90e387b.gif)
+
 ## Installation
 
 ````
