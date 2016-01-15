@@ -2,10 +2,10 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Theme
-ZSH_THEME="evan"
+ZSH_THEME="afowler"
 
 # Plugins
-plugins=(git)
+plugins=(git, elk)
 
 source $ZSH/oh-my-zsh.sh
 
