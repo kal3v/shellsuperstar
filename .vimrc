@@ -3,34 +3,39 @@ runtime bundle/vim-pathogen/autoload/pathogen.vim
 silent! execute pathogen#infect()
 
 " Display
-:syntax enable
-:set number
-:set cursorline
-:set background=dark
-":colorscheme jellybeans
+syntax enable
+set number
+set cursorline
+set background=dark
 
 " Buffers
-:noremap gn :bn<cr>
-:noremap gp :bp<cr>
-:noremap gd :bd<cr>
+noremap gn :bn<cr>
+noremap gp :bp<cr>
+noremap gd :bd<cr>
 
 " Navigation
-:noremap k gk
-:noremap j gj
-:noremap gk k
-:noremap gj j
+noremap k gk
+noremap j gj
+noremap gk k
+noremap gj j
 
 " Improve search
-:set ignorecase
-:set smartcase
+set ignorecase
+set smartcase
 
 " Turn off swap files
-:set noswapfile
-:set nobackup
-:set nowritebackup
+set noswapfile
+set nobackup
+set nowritebackup
 
 " Use braces to determine when to auto indent
-:set smartindent
+set smartindent
+
+" Tabs
+set tabstop=4       " The width of a TAB is set to 4.
+set shiftwidth=4    " Indents will have a width of 4
+set softtabstop=4   " Sets the number of columns for a TAB
+set expandtab       " Expand TABs to spaces
 
 " Airline
 set laststatus=2
