@@ -14,3 +14,8 @@ source $ZSH/oh-my-zsh.sh
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 export EDITOR="vim"
+
+# Replace the default vi-mode search with incremental search backward    
+bindkey -M vicmd '/' history-incremental-search-backward
+
+
