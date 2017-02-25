@@ -56,3 +56,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 noremap <F11> :SyntasticToggleMode<cr>
+
+" Enable spell check by default for markdown files
+autocmd BufRead,BufNewFile *.md setlocal spell
