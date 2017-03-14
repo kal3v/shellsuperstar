@@ -59,3 +59,6 @@ noremap <F11> :SyntasticToggleMode<cr>
 
 " Enable spell check by default for markdown files
 autocmd BufRead,BufNewFile *.md setlocal spell
+
+" Allow saving of files as sudo when I forgot to use sudoedit
+cmap w!! w !sudo tee > /dev/null %
