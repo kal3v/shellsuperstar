@@ -19,9 +19,15 @@ noremap j gj
 noremap gk k
 noremap gj j
 
+" Leader
+let mapleader = "\<Space>"
+
 " Improve search
 set ignorecase
 set smartcase
+set incsearch       " search as characters are entered
+set hlsearch        " highlight matches
+nnoremap <leader>n :nohlsearch<CR>
 
 " Turn off swap files
 set noswapfile
@@ -45,6 +51,8 @@ let g:airline#extensions#tabline#enabled = 1
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_switch_buffer = 0
+let g:ctrlp_working_path_mode = 0
 
 " Syntastic
 set statusline+=%#warningmsg#
