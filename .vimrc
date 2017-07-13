@@ -43,6 +43,27 @@ set shiftwidth=4    " Indents will have a width of 4
 set softtabstop=4   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 
+" Vundle
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'powerman/vim-plugin-viewdoc'
+Plugin 'tpope/vim-surround'
+
+call vundle#end() 
+filetype plugin indent on
+
+"
+" Plugin configuration
+"
+
 " Airline
 set laststatus=2
 let g:airline_theme = 'term'
@@ -63,7 +84,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
-noremap <F11> :SyntasticToggleMode<cr>
+noremap <F12> :SyntasticToggleMode<cr>
 
 " Enable spell check by default for markdown files
 autocmd BufRead,BufNewFile *.md setlocal spell

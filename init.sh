@@ -18,9 +18,6 @@ case $1 in
 	if [ "$TEST_CURRENT_SHELL" != "zsh" ]; then
 		printf "Changing default shell to zsh\n"
 		chsh -s $(grep /zsh$ /etc/shells | tail -1)
-	    
-	else
-		printf "zsh not installed on this sytem\n"
 	fi
 
 	# Link .zshrc
@@ -50,6 +47,9 @@ case $1 in
 
 	# Pull submodules
 	git submodule init && git submodule update
+
+    # Vundle PluginInstall
+    vim +PluginInstall +qall
 
 	# Link custom aliases
 	if [ ! -h $HOME/.oh-my-zsh/custom/aliases.zsh ]; then
