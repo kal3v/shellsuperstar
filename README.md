@@ -9,7 +9,7 @@ A simple, non-GUI, environment setup.
 * simple _.vimrc_
 * simple _.zshrc_ and some custom aliases
 * [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh)
-* [pathogen.vim](https://github.com/tpope/vim-pathogen.git)
+* [Vundle.vim](https://github.com/VundleVim/Vundle.vim)
 * [vim-airline](https://github.com/bling/vim-airline.git)
 * [ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim.git)
 * [Syntastic](https://github.com/scrooloose/syntastic.git)
