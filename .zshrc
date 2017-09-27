@@ -18,8 +18,9 @@ export EDITOR="vim"
 # Replace the default vi-mode search with incremental search backward    
 bindkey -M vicmd '/' history-incremental-search-backward
 
-# Edit the current with the editor
-autoload -U edit-command-line
+# Edit the current line with the editor
 bindkey -M vicmd v edit-command-line
 
+# Z
+. ~/shellsuperstar/z/z.sh
 
