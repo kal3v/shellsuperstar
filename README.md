@@ -15,6 +15,7 @@ A simple, non-GUI, environment setup.
 * [Syntastic](https://github.com/scrooloose/syntastic.git)
 * [viewdoc](https://github.com/powerman/vim-plugin-viewdoc.git)
 * [surround.vim](https://github.com/tpope/vim-surround.git)
+* [vim-notes](https://github.com/xolox/vim-notes)
 
 ![shellsuperstar](https://cloud.githubusercontent.com/assets/1853433/12089550/4c4031c6-b2e6-11e5-9dad-8986a90e387b.gif)
 

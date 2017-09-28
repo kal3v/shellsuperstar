@@ -56,6 +56,10 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'powerman/vim-plugin-viewdoc'
 Plugin 'tpope/vim-surround'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-notes'
+
+source ~/shellsuperstar/specific_plugins.vim
 
 call vundle#end() 
 filetype plugin indent on
