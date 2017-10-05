@@ -90,6 +90,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 noremap <F12> :SyntasticToggleMode<cr>
 
+" Set notes suffix to markdown by default
+:let g:notes_suffix = '.md'
+
 " Enable spell check by default for markdown files
 autocmd BufRead,BufNewFile *.md setlocal spell
 
