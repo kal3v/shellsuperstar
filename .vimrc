@@ -58,6 +58,7 @@ Plugin 'powerman/vim-plugin-viewdoc'
 Plugin 'tpope/vim-surround'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
+Plugin 'Lokaltog/vim-distinguished'
 
 source ~/shellsuperstar/specific_plugins.vim
 
@@ -98,3 +99,6 @@ autocmd BufRead,BufNewFile *.md setlocal spell
 
 " Allow saving of files as sudo when I forgot to use sudoedit
 cmap w!! w !sudo tee > /dev/null %
+
+" Set colour scheme
+colorscheme distinguished
