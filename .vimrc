@@ -1,7 +1,3 @@
-" Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-silent! execute pathogen#infect()
-
 " Display
 syntax enable
 set number
