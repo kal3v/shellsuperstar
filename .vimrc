@@ -3,6 +3,8 @@ syntax enable
 set number
 set cursorline
 set background=dark
+" get a line break at a word boundary
+set linebreak
 
 " Buffers
 noremap gn :bn<cr>
