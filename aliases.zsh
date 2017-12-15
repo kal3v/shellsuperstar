@@ -14,7 +14,10 @@ alias snatpl="sudo netstat -natp | grep -i listen"
 alias psa="ps axf"
 alias ll="ls -latr"
 alias sl="ls"
-alias v="vim"
 
 # Git
 alias gits="git status"
+
+# Vim
+alias v="vim"
+alias vimrc="vim ~/.vimrc"
