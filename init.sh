@@ -56,6 +56,9 @@ case $1 in
 		ln -s $HOME/shellsuperstar/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
 	fi
 
+    # Create Vim's specific plugins file
+    touch $HOME/shellsuperstar/specific_plugins.vim
+
 	;;
 
 	remove)
