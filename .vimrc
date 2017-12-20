@@ -67,6 +67,9 @@ filetype plugin indent on
 " Plugin configuration
 "
 
+" Viewdoc
+let g:viewdoc_only=1
+
 " Airline
 set laststatus=2
 let g:airline_theme = 'term'
