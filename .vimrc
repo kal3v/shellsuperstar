@@ -68,6 +68,8 @@ filetype plugin indent on
 "
 
 " Viewdoc
+" open documentation in a new buffer
+let g:viewdoc_open='new'
 let g:viewdoc_only=1
 
 " Airline
