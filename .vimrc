@@ -105,3 +105,6 @@ cmap w!! w !sudo tee > /dev/null %
 
 " Set colour scheme
 colorscheme distinguished
+
+" Map Esc to jk
+inoremap jk <Esc>
