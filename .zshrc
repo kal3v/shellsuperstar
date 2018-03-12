@@ -24,3 +24,5 @@ bindkey -M vicmd v edit-command-line
 # Z
 . ~/shellsuperstar/z/z.sh
 
+# Bind jk to vi command mode
+bindkey jk vi-cmd-mode
