@@ -57,6 +57,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'Lokaltog/vim-distinguished'
+Plugin 'terryma/vim-multiple-cursors'
 
 source ~/shellsuperstar/specific_plugins.vim
 
