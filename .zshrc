@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="flazz"
 
 # Plugins
-plugins=(git, vi-mode, taskwarrior)
+plugins=(git, vi-mode, taskwarrior, history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -17,6 +17,9 @@ export EDITOR="vim"
 
 # Replace the default vi-mode search with incremental search backward    
 bindkey -M vicmd '/' history-incremental-search-backward
+# remap k & j for the history substring search module
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 # Bind fj to incremental search backward
 bindkey fj history-incremental-search-backward
