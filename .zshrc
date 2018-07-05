@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # Theme
-ZSH_THEME="flazz"
+ZSH_THEME=""
 
 # Plugins
 plugins=(git, vi-mode, taskwarrior, history-substring-search)
