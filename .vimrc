@@ -58,6 +58,7 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'dhruvasagar/vim-table-mode'
 
 source ~/shellsuperstar/specific_plugins.vim
 
