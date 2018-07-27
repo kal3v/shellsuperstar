@@ -11,7 +11,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+export PATH="$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 
 export EDITOR="vim"
 
@@ -32,3 +32,4 @@ bindkey jk vi-cmd-mode
 
 # Z
 . ~/shellsuperstar/z/z.sh
+
