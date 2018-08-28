@@ -41,6 +41,16 @@ set shiftwidth=4    " Indents will have a width of 4
 set softtabstop=4   " Sets the number of columns for a TAB
 set expandtab       " Expand TABs to spaces
 
+" Map Esc to jk
+inoremap jk <Esc>
+
+" Allow saving of files as sudo when I forgot to use sudoedit
+cmap w!! w !sudo tee > /dev/null %
+
+" Enable spell check by default for markdown and wiki files
+autocmd BufRead,BufNewFile *.md setlocal spell
+autocmd BufRead,BufNewFile *.wiki setlocal spell
+
 " Vundle
 set nocompatible
 filetype off
@@ -59,6 +69,7 @@ Plugin 'xolox/vim-notes'
 Plugin 'Lokaltog/vim-distinguished'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'vimwiki/vimwiki'
 
 source ~/shellsuperstar/specific_plugins.vim
 
@@ -96,17 +107,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 noremap <F12> :SyntasticToggleMode<cr>
 
-" Set notes suffix to markdown by default
-:let g:notes_suffix = '.md'
-
-" Enable spell check by default for markdown files
-autocmd BufRead,BufNewFile *.md setlocal spell
-
-" Allow saving of files as sudo when I forgot to use sudoedit
-cmap w!! w !sudo tee > /dev/null %
-
 " Set colour scheme
 colorscheme distinguished
 
-" Map Esc to jk
-inoremap jk <Esc>
+" vimwiki 
+let g:vimwiki_folding = 'syntax'
+let g:vimwiki_list = [{'path': '~/notes/', 'ext': '.wiki'}]
