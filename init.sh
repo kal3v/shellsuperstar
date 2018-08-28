@@ -59,6 +59,9 @@ case $1 in
     # Create Vim's specific plugins file
     touch $HOME/shellsuperstar/specific_plugins.vim
 
+    # Install jrnl
+    pip install jrnl
+
 	;;
 
 	remove)
