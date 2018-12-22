@@ -68,6 +68,7 @@ Plugin 'Lokaltog/vim-distinguished'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'vimwiki/vimwiki'
+Plugin 'python-mode/python-mode'
 
 source ~/shellsuperstar/specific_plugins.vim
 
@@ -104,6 +105,13 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 noremap <F12> :SyntasticToggleMode<cr>
+let g:syntastic_python_checkers = ['pyflakes', 'python']
+
+"" Pymode
+let g:pymode = 1
+let g:pymode_options = 2
+let g:pymode_virtualenv = 1
+let g:pymode_run = 0
 
 " Set colour scheme
 colorscheme distinguished

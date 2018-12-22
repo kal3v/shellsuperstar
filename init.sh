@@ -61,6 +61,9 @@ case $1 in
 
     # Install jrnl
     pip install jrnl
+    
+    # Install pyflakes
+    pip install pyflakes
 
 	;;
 
