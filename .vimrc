@@ -112,6 +112,7 @@ let g:pymode = 1
 let g:pymode_options = 2
 let g:pymode_virtualenv = 1
 let g:pymode_run = 0
+let g:pymode_folding = 0
 
 " Set colour scheme
 colorscheme distinguished
