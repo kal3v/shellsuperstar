@@ -10,6 +10,7 @@ set linebreak
 noremap gn :bn<cr>
 noremap gp :bp<cr>
 noremap gd :bd<cr>
+noremap gw :bw<cr>
 
 " Navigation
 noremap k gk
@@ -50,6 +51,19 @@ cmap w!! w !sudo tee > /dev/null %
 " Enable spell check by default for markdown and wiki files
 autocmd BufRead,BufNewFile *.md setlocal spell
 autocmd BufRead,BufNewFile *.wiki setlocal spell
+
+" netrw
+" default to tree list view
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+" open new files in a previous window
+let g:netrw_browse_split = 4
+let g:netrw_winsize = 25
+let g:netrw_altv = 1
+nnoremap <leader>v :Vexplore<CR>
+
+" ctags
+set tags=~/mytags
 
 " Vundle
 set nocompatible
@@ -119,4 +133,6 @@ colorscheme distinguished
 
 " vimwiki 
 let g:vimwiki_folding = 'syntax'
-let g:vimwiki_list = [{'path': '~/notes/', 'ext': '.wiki'}]
+let g:vimwiki_list = [{'path': '~/notes/', 'ext': '.wiki',
+                      \'path_html': '~/notes_html',
+                      \'auto_export': 1}]
