@@ -78,7 +78,6 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'powerman/vim-plugin-viewdoc'
 Plugin 'tpope/vim-surround'
-Plugin 'Lokaltog/vim-distinguished'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'vimwiki/vimwiki'
@@ -129,7 +128,7 @@ let g:pymode_run = 0
 let g:pymode_folding = 0
 
 " Set colour scheme
-colorscheme distinguished
+colorscheme default
 
 " vimwiki 
 let g:vimwiki_folding = 'syntax'
