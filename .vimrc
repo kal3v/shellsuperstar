@@ -82,6 +82,7 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'vimwiki/vimwiki'
 Plugin 'python-mode/python-mode'
+Plugin 'majutsushi/tagbar'
 
 source ~/shellsuperstar/specific_plugins.vim
 
@@ -135,3 +136,6 @@ let g:vimwiki_folding = 'syntax'
 let g:vimwiki_list = [{'path': '~/notes/', 'ext': '.wiki',
                       \'path_html': '~/notes_html',
                       \'auto_export': 1}]
+
+" Tagbar
+nnoremap <leader>t :TagbarToggle<CR>
