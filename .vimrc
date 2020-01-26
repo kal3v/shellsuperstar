@@ -139,3 +139,12 @@ let g:vimwiki_list = [{'path': '~/notes/', 'ext': '.wiki',
 
 " Tagbar
 nnoremap <leader>t :TagbarToggle<CR>
+
+" Templates
+"
+" AWK
+if has("autocmd")
+    augroup templates
+        autocmd BufNewFile *.awk 0r ~/shellsuperstar/templates/skeleton.awk
+    augroup END
+endif
