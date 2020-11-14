@@ -2,6 +2,7 @@
 syntax enable
 set number
 set cursorline
+set cursorcolumn
 set background=dark
 " get a line break at a word boundary
 set linebreak
@@ -26,7 +27,7 @@ set ignorecase
 set smartcase
 set incsearch       " search as characters are entered
 set hlsearch        " highlight matches
-nnoremap <leader>n :nohlsearch<CR>
+nnoremap <leader>h :nohlsearch<CR>
 
 " Turn off swap files
 set noswapfile
@@ -49,8 +50,8 @@ inoremap jk <Esc>
 cmap w!! w !sudo tee > /dev/null %
 
 " Enable spell check by default for markdown and wiki files
-autocmd BufRead,BufNewFile *.md setlocal spell
-autocmd BufRead,BufNewFile *.wiki setlocal spell
+" autocmd BufRead,BufNewFile *.md setlocal spell
+" autocmd BufRead,BufNewFile *.wiki setlocal spell
 
 " netrw
 " default to tree list view
@@ -82,6 +83,8 @@ Plugin 'terryma/vim-multiple-cursors'
 Plugin 'vimwiki/vimwiki'
 Plugin 'python-mode/python-mode'
 Plugin 'majutsushi/tagbar'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'davidhalter/jedi-vim'
 
 source ~/shellsuperstar/specific_plugins.vim
 
@@ -124,20 +127,24 @@ let g:syntastic_python_checkers = ['pyflakes', 'python']
 let g:pymode = 1
 let g:pymode_options = 2
 let g:pymode_virtualenv = 1
-let g:pymode_run = 0
+let g:pymode_run = 1
 let g:pymode_folding = 0
+let g:pymode_rope = 0
+
+"" Jedi
+let g:jedi#auto_initialization = 1
 
 " Set colour scheme
-colorscheme default
+colorscheme nord
 
 " vimwiki 
 let g:vimwiki_folding = 'syntax'
 let g:vimwiki_list = [{'path': '~/notes/', 'ext': '.wiki',
                       \'path_html': '~/notes_html',
                       \'auto_export': 1}]
-
-" Tagbar
-nnoremap <leader>t :TagbarToggle<CR>
+nmap <Leader>tl <Plug>VimwikiToggleListItem
+let g:vim_markdown_folding_disabled=1
+set foldlevelstart=3
 
 " Templates
 "
